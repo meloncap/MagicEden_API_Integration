@@ -17,7 +17,7 @@ function App() {
 
   const getStats = async () => {
     const data = await axios(
-      `https://api-devnet.magiceden.dev/v2/collections?offset=0&limit=20`
+      `http://api-mainnet.magiceden.dev/v2/collections/degods/stats`
     ).then((res) => {
       console.log(res.data);
       setFloor(res.data.floorPrice);
